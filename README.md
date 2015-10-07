@@ -50,6 +50,9 @@ First, clone this repo into /var/www/
 ### config.php
 You have to modify config.php to set up the base url as well as mysql credentials and config.
 
+### index.html
+Since raw html can't include other html without javascript or iframes, you'll need to manually edit the quick links at the bottom for vps1, vps2, etc.
+
 ### nginx config
 
 Include this nginx config file in your `sites-enabled` folder.
