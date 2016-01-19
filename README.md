@@ -53,6 +53,17 @@ You have to modify config.php to set up the base url as well as mysql credential
 ### index.html
 Since raw html can't include other html without javascript or iframes, you'll need to manually edit the quick links at the bottom for vps1, vps2, etc.
 
+### mysql user permissions
+To check the galera cluster status, a user with the proper credentials must be created. It does *not* need any `GRANT` privileges to any tables. The only thing this user must be able to do is read a status line from the mysql database, which is a privilege implicitely granted to all users. Feel free to be as lax or strict with the password as you see fit.
+
+Connect to mysql using mysqlclient (or use your favorite program to connect and add the user)
+
+* `mysql -p`
+
+Create the user, modifying the password as you see fit. Use these credentials in the config.php file.
+* `CREATE USER 'vpstest'@'localhost' IDENTIFIED BY 'vpstest';`
+* 
+
 ### nginx config
 
 Include this nginx config file in your `sites-enabled` folder.
