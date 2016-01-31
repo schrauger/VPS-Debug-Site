@@ -1,10 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "db_user";
-$password = "db_pass";
-$dbname = "db_database";
-$dbtable = "db_table";
-$dbcolumn = "db_text_column";
+$username = "vpstest";
+$password = "vpstest";
 $servers = array(
   array(
     'url' => '//vps1.address.com',

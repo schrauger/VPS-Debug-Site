@@ -11,7 +11,6 @@ if ($conn->connect_error) {
 echo "<html>";
 echo "<body>";
 
-//$sql = "SELECT " . $dbcolumn . " as 'message' FROM " . $dbname . "." . $dbtable;
 $sql = "SELECT VARIABLE_VALUE as 'message' FROM information_schema.GLOBAL_STATUS WHERE VARIABLE_NAME = 'wsrep_cluster_size'";
 if (!$result = $conn->query($sql)) {
 //	echo "Error";
