@@ -8,8 +8,8 @@ if ($conn->connect_error) {
     header('HTTP/1.1 500 Internal Server Error');
     die("Connection failed: " . $conn->connect_error);
 }
-echo "<html>";
-echo "<body>";
+
+include "head.php"; 
 
 $sql = "SELECT VARIABLE_VALUE as 'message' FROM information_schema.GLOBAL_STATUS WHERE VARIABLE_NAME = 'wsrep_cluster_size'";
 if (!$result = $conn->query($sql)) {
@@ -29,6 +29,6 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 <?php include "links.php"; ?>
-</body>
-</html>
+<?php include "footer.php"; ?>
+
 
