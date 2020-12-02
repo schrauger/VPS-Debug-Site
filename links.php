@@ -15,7 +15,8 @@
 
 </section>
 
-<?php/*
+<?php
+/*
 foreach ($servers as $server) {
   echo "<a href='" . $server['url'] . "'>Switch to " . $server['name'] . "</a><br />";
 }
