@@ -12,7 +12,7 @@
 	<section><a href="index.html"><i class="material-icons">dns</i>Check nginx</a></section>
 	<section><a href="index.php"><i class="material-icons">dns</i>Check PHP</a></section>
 	<section><a href="phpfpm.php"><i class="material-icons">dns</i>Check php7.4-fpm</a></section>
-	<section><a href="hhvm.php"><i class="material-icons">dns</i>Check hhvm</a></section>
+	<!--<section><a href="hhvm.php"><i class="material-icons">dns</i>Check hhvm</a></section>-->
 	<section><a href="db.php"><i class="material-icons">dns</i>Check mysql</a></section>
 
 </section>
