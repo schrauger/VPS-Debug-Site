@@ -1,6 +1,5 @@
-<html>
-<body>
+<?php include "head.php"; ?>
 <?php echo "hhvm running"; ?>
 <?php include "links.php"; ?>
-</body>
-</html>
+<?php include "footer.php"; ?>
+

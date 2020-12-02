@@ -1,0 +1,103 @@
+body {
+  color: white;
+  background: #222 url("images/stardust_@2X.png") repeat;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 20px;
+  line-height: 1; }
+  body a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 120%; }
+  body .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    margin-right: 15px;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga'; }
+  body h1 {
+    display: block;
+    margin: 0 auto 60px auto;
+    clear: both;
+    font-size: 300%;
+    overflow: hidden; }
+    body h1 span {
+      background: url("images/cat-universe.jpg") no-repeat center center;
+      background-size: cover;
+      border-radius: 200px;
+      width: 70px;
+      height: 70px;
+      display: block;
+      margin: 0 auto 20px auto;
+      text-indent: -9999px; }
+  body .output {
+    background: green;
+    display: block;
+    padding: 20px 10px;
+    margin: 0 auto 55px auto;
+    border-radius: 4px;
+    width: 300px;
+    font-size: 180%; }
+    body .output.broken {
+      background: red; }
+  body section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    overflow: auto;
+    border-radius: 4px; }
+    body section section {
+      margin: 20px 10px;
+      float: left; }
+      body section section a {
+        padding: 20px 30px;
+        background: #666;
+        transition: background .5s;
+        font-size: 100%; }
+        body section section a:hover {
+          background: #777; }
+  body nav {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    margin-bottom: 50px; }
+    body nav a {
+      background: #FFCF08;
+      color: black;
+      padding: 20px 10px;
+      width: 200px;
+      margin: 0 20px;
+      border-radius: 4px;
+      display: block;
+      float: left;
+      justify-content: space-around; }
+  body footer {
+    font-size: 70%;
+    color: #999; }
+    body footer a {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      padding: 20px; }
