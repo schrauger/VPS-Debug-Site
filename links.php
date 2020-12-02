@@ -1,8 +1,6 @@
 <?php require_once('config.php'); ?>
 
-<h1 id="#top"><span>Grumpy Cat Unvierse.jpg</span>UCF COM VPS Status</h1>
-
-<span class="output running"><i class="material-icons">done</i>nginx is running.</span>
+<!-- <span class="output running"><i class="material-icons">done</i>nginx is running.</span> -->
 
 <!-- Uncomment this and/or use style class for errors! -->
 <!-- <span class="output broken"><i class="material-icons">warning</i>nginx warning!</span> -->
@@ -17,13 +15,8 @@
 
 </section>
 
-<nav>
-	<section><a href="//vps1.med.ucf.edu"><i class="material-icons">computer</i>Switch to VPS1</a></section>
-	<section><a href="//vps2.med.ucf.edu"><i class="material-icons">computer</i>Switch to VPS2</a></section>
-</nav>
-
-<?php
+<?php/*
 foreach ($servers as $server) {
   echo "<a href='" . $server['url'] . "'>Switch to " . $server['name'] . "</a><br />";
 }
-?>
+*/?>

@@ -1,4 +1,6 @@
 <?php
+include('head.php'); 
+
 require_once('config.php'); // database credentials
 
 try {
@@ -14,7 +16,7 @@ if ($conn->connect_error) {
     header('HTTP/1.1 500 Internal Server Error');
     die("Connection failed: " . $conn->connect_error);
 }
-include "head.php"; 
+
 
 $sql = "SELECT VARIABLE_VALUE as 'message' FROM information_schema.GLOBAL_STATUS WHERE VARIABLE_NAME = 'wsrep_cluster_size'";
 if (!$result = $conn->query($sql)) {
@@ -33,7 +35,9 @@ if ($result->num_rows > 0) {
 echo "<br />" . $sql;
 $conn->close();
 ?>
-<?php include "links.php"; ?>
-<?php include "footer.php"; ?>
+
+<?php include('links.php'); ?>
+
+<?php include('footer.php'); ?>
 
 

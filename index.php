@@ -1,5 +1,7 @@
-<?php include "head.php"; ?>
-<?php echo "php running"; ?>
-<?php include "links.php"; ?>
-<?php echo "Your IP detected: " . $_SERVER['REMOTE_ADDR']; ?>
-<?php include "footer.php"; ?>
+<?php include('head.php'); ?>
+
+<span class="output running"><i class="material-icons">done</i><?php echo "php running"; ?></span>
+
+<?php include('links.php'); ?>
+
+<?php include('footer.php'); ?>
