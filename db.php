@@ -1,14 +1,19 @@
 <?php
 require_once('config.php'); // database credentials
 
-// Create connection
-$conn = new mysqli($servername, $username, $password);
+try {
+    // Create connection
+    $conn = new mysqli($servername, $username, $password);
+} catch (mysqli_sql_exception $e) {
+    header('HTTP/1.1 500 Internal Server Error');
+    die("Connection failed: " . $e->errorMessage());
+}
+
 // Check connection
 if ($conn->connect_error) {
     header('HTTP/1.1 500 Internal Server Error');
     die("Connection failed: " . $conn->connect_error);
 }
-
 include "head.php"; 
 
 $sql = "SELECT VARIABLE_VALUE as 'message' FROM information_schema.GLOBAL_STATUS WHERE VARIABLE_NAME = 'wsrep_cluster_size'";
@@ -25,7 +30,7 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
-
+echo "<br />" . $sql;
 $conn->close();
 ?>
 <?php include "links.php"; ?>

@@ -11,15 +11,15 @@
 
 	<section><a href="index.html"><i class="material-icons">dns</i>Check nginx</a></section>
 	<section><a href="index.php"><i class="material-icons">dns</i>Check PHP</a></section>
-	<section><a href="phpfpm.php"><i class="material-icons">dns</i>Check php5-fpm</a></section>
-	<section><a href="hhvm.php"><i class="material-icons">dns</i>Check hhvm</a></section>
+	<section><a href="phpfpm.php"><i class="material-icons">dns</i>Check php7.4-fpm</a></section>
+	<!--<section><a href="hhvm.php"><i class="material-icons">dns</i>Check hhvm</a></section>-->
 	<section><a href="db.php"><i class="material-icons">dns</i>Check mysql</a></section>
 
 </section>
 
 <nav>
-	<section><a href="//vps1.address.com"><i class="material-icons">computer</i>Switch to VPS1</a></section>
-	<section><a href="//vps2.address.com"><i class="material-icons">computer</i>Switch to VPS2</a></section>
+	<section><a href="//vps1.med.ucf.edu"><i class="material-icons">computer</i>Switch to VPS1</a></section>
+	<section><a href="//vps2.med.ucf.edu"><i class="material-icons">computer</i>Switch to VPS2</a></section>
 </nav>
 
 <?php

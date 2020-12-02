@@ -18,8 +18,8 @@ If it fails to load, then your web service isn't processing any web pages.
 ### index.php
 If this loads, your php processor is running.
 
-If it fails to load, you can't process php. Both hhvm and php5-fpm are down.
-* `service restart hhvm; service restart php5-fpm`
+If it fails to load, you can't process php. Both hhvm and php7.4-fpm are down.
+* `service restart hhvm; service restart php7.4-fpm`
 
 ### db.php
 If this loads, your SQL database service is running.
@@ -36,10 +36,10 @@ If not, `hhvm` crashed.
 * `service hhvm restart`
 
 ### phpfpm.php
-If this loads, then `php5-fpm` is running.
+If this loads, then `php7.4-fpm` is running.
 
-If not, `php5-fpm` crashed.
-* `service php5-fpm restart`
+If not, `php7.4-fpm` crashed.
+* `service php7.4-fpm restart`
 
 ## Config
 ### Clone
@@ -107,7 +107,7 @@ server {
 		add_header Cache-Control no-cache;
 	}
 
-	# Process php using hhvm or php5-fpm
+	# Process php using hhvm or php7.4-fpm
 	location ~ /(index)|(db).php {
 		fastcgi_pass 	vpsphpconfig; # reference upstream directive defined at top of file
 		fastcgi_index 	index.php;
