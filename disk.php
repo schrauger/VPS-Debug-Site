@@ -9,7 +9,7 @@ $total = disk_total_space('/');
 $used = $total - $free;
 $percent = ($used/$total)*100;
 
-echo $used . " / " . $total . " = " . $percent . "% used";
+echo ($used/(1024*1024)) . "MB / " . ($total/(1024*1024)) . "MB = " . round($percent,2) . "% used";
 ?></span>
 
 <?php include('links.php'); ?>
