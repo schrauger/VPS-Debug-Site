@@ -17,7 +17,7 @@ echo "
 <span class='used'>{$used_string}</span>
 <span class='divider'>/</span>
 <span class='total'>{$total_string}</span>
-<span class='percentage'>{$percentage_string} used</span>
+<span class='percentage'> = {$percent_string} used</span>
 ";
 ?></span>
 
