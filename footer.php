@@ -1,6 +1,10 @@
+
 <nav>
-	<section><a href="//vps1.med.ucf.edu"><i class="material-icons">computer</i>Switch to VPS1</a></section>
-	<section><a href="//vps2.med.ucf.edu"><i class="material-icons">computer</i>Switch to VPS2</a></section>
+	<?php
+	foreach ($servers as $server) {
+		echo "<section><a href='" . $server['url'] . "'>Switch to " . $server['name'] . "</a></section>";
+	}
+	?>
 </nav>
 
 <?php echo "Your IP detected: " . $_SERVER['REMOTE_ADDR']; ?>
